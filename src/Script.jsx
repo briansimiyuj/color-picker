@@ -1,7 +1,11 @@
+import Box from './Box';
+
 function Script() {
   return (
-    <h1>Hello world</h1>
+    
+    <Box/>
+
   );
 }
 
-export default Script;
+export default Script

@@ -10,3 +10,9 @@ body{
   align-items: center;
   height: 100vh;
 }
+
+.box{
+  width: 15rem;
+  height: 15rem;
+  border: 3px solid #000;
+}
