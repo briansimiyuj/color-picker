@@ -1,9 +1,16 @@
-import Box from './Box';
+import Box from './Box'
+import Input from './Input'
 
 function Script() {
   return (
     
-    <Box/>
+    <div className="script">
+
+      <Box/>
+
+      <Input/>
+
+    </div>
 
   );
 }

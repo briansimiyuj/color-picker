@@ -11,6 +11,26 @@ body{
   height: 100vh;
 }
 
+form{
+  display: flex;
+  flex-flow: column;
+  margin-top: 2rem;
+}
+
+input{
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+button{
+  background: purple;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 15px;
+}
+
 .box{
   width: 15rem;
   height: 15rem;
