@@ -1,6 +1,8 @@
 import colorNames  from 'colornames';
 
-const Input = ({ backgroundColor, setBackgroundColor, setHexValue }) =>{
+const Input = ({
+           backgroundColor, setBackgroundColor, setHexValue, isDarkText, setIsDarkText
+      }) =>{
 
     return(
  
@@ -22,7 +24,10 @@ const Input = ({ backgroundColor, setBackgroundColor, setHexValue }) =>{
             }}
           />
 
-          <button>Change color</button>
+          <button
+            type="button"
+            onClick={() => setIsDarkText(!isDarkText)}
+          >Toggle color</button>
 
         </form>
 
