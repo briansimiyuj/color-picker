@@ -35,4 +35,12 @@ button{
   width: 15rem;
   height: 15rem;
   border: 3px solid #000;
+  border-radius: 0.25rem;    
+  display: grid;
+  place-content: center;
+}
+
+p{
+  text-align: center;
+  font-size: 2rem; 
 }
