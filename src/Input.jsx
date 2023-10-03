@@ -1,4 +1,6 @@
-const Input = ({ backgroundColor, setBackgroundColor }) =>{
+import colorNames  from 'colornames';
+
+const Input = ({ backgroundColor, setBackgroundColor, setHexValue }) =>{
 
     return(
  
@@ -14,7 +16,10 @@ const Input = ({ backgroundColor, setBackgroundColor }) =>{
             id="" 
             placeholder="Enter a color here..."
             value={backgroundColor} 
-            onChange={e => setBackgroundColor(e.target.value)}
+            onChange={e =>{
+               setBackgroundColor(e.target.value)
+               setHexValue(colorNames(e.target.value))
+            }}
           />
 
           <button>Change color</button>

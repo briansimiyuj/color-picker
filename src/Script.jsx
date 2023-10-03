@@ -6,16 +6,22 @@ function Script() {
 
   const [backgroundColor, setBackgroundColor] = useState('')
 
+  const [hexValue, setHexValue] = useState('')
+
 
   return (
     
     <div className="script">
 
-        <Box backgroundColor={backgroundColor}/>
+        <Box 
+          backgroundColor={backgroundColor}
+          hexValue={hexValue}
+        />
 
         <Input
           backgroundColor={backgroundColor}
           setBackgroundColor={setBackgroundColor}
+          setHexValue={setHexValue}
         />
 
     </div>
