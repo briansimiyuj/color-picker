@@ -8,6 +8,8 @@ function Script() {
 
   const [hexValue, setHexValue] = useState('')
 
+  const [isDarkText, setIsDarkText] = useState(true)
+
 
   return (
     
@@ -16,12 +18,15 @@ function Script() {
         <Box 
           backgroundColor={backgroundColor}
           hexValue={hexValue}
+          isDarkText={isDarkText}
         />
 
         <Input
           backgroundColor={backgroundColor}
           setBackgroundColor={setBackgroundColor}
           setHexValue={setHexValue}
+          isDarkText={isDarkText}
+          setIsDarkText={setIsDarkText}
         />
 
     </div>
