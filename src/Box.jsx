@@ -1,23 +1,15 @@
-const Box = ({ colorValue }) =>{
+const Box = ({ backgroundColor }) =>{
 
     return(
 
-        <div className="box" style={{backgroundColor: colorValue}}>
+        <div className="box" style={{backgroundColor: backgroundColor}}>
 
-            <p>{colorValue ? colorValue : 'Empty Value'}</p>
+            <p>{backgroundColor ? backgroundColor : 'Empty Value'}</p>
 
         </div>
 
     )
 
 }
-
-
-Box.defaultProps ={
-
-    colorValue: 'empty color value',
-
-}
-
 
 export default Box

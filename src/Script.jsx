@@ -6,11 +6,12 @@ function Script() {
 
   const [backgroundColor, setBackgroundColor] = useState('')
 
+
   return (
     
     <div className="script">
 
-        <Box/>
+        <Box backgroundColor={backgroundColor}/>
 
         <Input
           backgroundColor={backgroundColor}
